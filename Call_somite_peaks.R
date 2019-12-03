@@ -58,10 +58,6 @@ group_by(   replicate) %>%
             somite_index = as.numeric(as.factor(cump2))) %>% 
   filter(   peak_to_peak > 0) %>%
  ungroup(   ) %>% 
-  mutate(   group = ifelse(replicate == "Y8", 5, 
-                           ifelse(replicate == "Y7", 4, 
-                           ifelse(replicate == "Y0" | replicate == "Y1", 1, 
-                           ifelse(replicate == "Y5" | replicate == "Y6", 3,2))))) %>%
   
   ggplot(   aes(   x = somite_index, y = peak_to_peak, col = as.factor(replicate))) +
       geom_line(   ) +
