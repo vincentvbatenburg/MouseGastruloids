@@ -4,4 +4,4 @@ Scripts used in the image data analyses for van den Brink et al. 2019. *Call_som
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
